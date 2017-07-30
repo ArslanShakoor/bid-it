@@ -14,6 +14,7 @@ var homepage_component_1 = require("./homepage/homepage.component");
 var documents_component_1 = require("./documents/documents.component");
 var proposal_list_component_1 = require("./proposal/proposal_list.component");
 var proposal_new_component_1 = require("./proposal/proposal-new.component");
+var proposal_show_component_1 = require("./proposal/proposal-show.component");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
@@ -31,6 +32,7 @@ var AppModule = (function () {
                 documents_component_1.DocumentComponent,
                 proposal_list_component_1.ProposalListComponent,
                 proposal_new_component_1.ProposalNewComponent,
+                proposal_show_component_1.ProposalShowComponent,
             ],
             bootstrap: [
                 app_component_1.AppComponent

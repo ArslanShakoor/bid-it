@@ -9,6 +9,7 @@ import { HomepageComponent } from './homepage/homepage.component'
 import { DocumentComponent } from './documents/documents.component'
 import { ProposalListComponent } from './proposal/proposal_list.component'
 import { ProposalNewComponent } from './proposal/proposal-new.component'
+import { ProposalShowComponent } from './proposal/proposal-show.component'
 import { AppRoutingModule} from './app-routing.module'
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AppRoutingModule} from './app-routing.module'
       DocumentComponent,
       ProposalListComponent,
       ProposalNewComponent,
+      ProposalShowComponent,
     ],
     bootstrap: [
       AppComponent
