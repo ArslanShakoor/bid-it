@@ -1,0 +1,6 @@
+expect class Proposal{
+	constructor(
+
+		){}
+
+}
