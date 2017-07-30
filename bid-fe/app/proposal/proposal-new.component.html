@@ -4,13 +4,16 @@
   <form #proposalForm="ngForm"> 
     <label for="customer"> Customer Name</label>
     <input type="text"
-    id="customer_id"
+    id="customer"
     placeholder="ABC Company"
     required
     name="customer"
     #customer = 'ngModel'
     [(ngModel)] = "proposal.customer"
     >
+    <div [hidden] = " customer.valid || customer.pristine ">
+    we require customer name
+    </div>
   </form>
   <form #proposalForm="ngForm"> 
     <label for="portfolio_url"> Portfolio URL</label>
@@ -22,50 +25,66 @@
     #portfolio_url = 'ngModel'
     [(ngModel)] = "proposal.portfolio_url"
     >
+    <div [hidden] = " portfolio_url.valid || portfolio_url.pristine ">
+    we require portfolio url
+    </div>
   </form>
   <form #proposalForm="ngForm"> 
     <label for="tools"> Tools</label>
     <input type="text"
-    id="customer_id"
+    id="tools"
     placeholder="tools"
     required
     name="tools"
     #tools = 'ngModel'
     [(ngModel)] = "proposal.tools"
     >
+    <div [hidden] = " tools.valid || tools.pristine ">
+    we require tools
+    </div>
   </form>
   <form #proposalForm="ngForm"> 
     <label for="estimated_hours"> Estimated Hours</label>
     <input type="number"
-    id="customer_id"
+    id="estimated_hours"
     placeholder="hours"
     required
     name="estimated_hours"
     #estimated_hours = 'ngModel'
     [(ngModel)] = "proposal.estimated_hours"
     >
+    <div [hidden] = " estimated_hours.valid || estimated_hours.pristine ">
+    we require estimated hours
+    </div>
+
   </form>
   <form #proposalForm="ngForm"> 
     <label for="weeks_to_complete"> No of Weeks</label>
     <input type="number"
-    id="customer_id"
+    id="weeks_to_complete"
     placeholder="No of weeks"
     required
     name="weeks_to_complete"
     #weeks_to_complete = 'ngModel'
     [(ngModel)] = "proposal.weeks_to_complete"
     >
+    <div [hidden] = "weeks_to_complete.valid || weeks_to_complete.pristine ">
+    we require no of weeeks
+    </div>
   </form>
   <form #proposalForm="ngForm"> 
     <label for="hourly_rate"> Hourly Rate</label>
     <input type="number"
-    id="customer_id"
+    id="hourly_rate"
     placeholder="hours"
     required
     name="hourly_rate"
     #hourly_rate = 'ngModel'
     [(ngModel)] = "proposal.hourly_rate"
     >
+    <div [hidden] = " hourly_rate.valid || hourly_rate.pristine ">
+    we require hourly rate
+    </div>
   </form>
 </div>
 <div>
