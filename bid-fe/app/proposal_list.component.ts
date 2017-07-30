@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Proposal } from "./proposal";
 
 @Component({
 	moduleId: module.id,
@@ -6,5 +7,5 @@ import { Component } from "@angular/core";
 	templateUrl: 'proposal-list.component.html'
 })
 export class ProposalListComponent{
-
+ proposal = new Proposal()
 }
