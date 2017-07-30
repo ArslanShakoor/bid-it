@@ -7,6 +7,7 @@ import { Document } from "./document";
 	templateUrl: 'documents.component.html'
 })
 export class DocumentComponent{
+	pageTitle: String = "Documents List"
 	documents: Document[] = [{
 		title: "first doc",
 		description: "first doc testing",
@@ -29,8 +30,4 @@ export class DocumentComponent{
 		image_url: "http://file.jpg"
     }
     ]
-
-
-
-
 }
